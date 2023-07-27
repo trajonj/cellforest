@@ -72,8 +72,8 @@
           <a class="navbar-brand" href="#">
             <img
               alt="Rhurbo Logo"
-              src="./assets/rhurbo_logo_extended.png"
-              width="190"
+              src="./assets/rhurbo_logo_b.png"
+              width="48"
               height="48"
               class="d-inline-block align-text-top"
             />
