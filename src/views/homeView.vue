@@ -18,6 +18,9 @@ export default {
       <div class="hubbox"></div>
       <div class="hubpiece"></div>
       <div class="hubpiece2"></div>
+      <div class="hubpiece3"></div>
+      <div class="hubpiece4"></div>
+      <div class="hubpiece5"></div>
 
   </div>
   <footer>
@@ -66,7 +69,7 @@ h1, h2, h3 {
 }
 .hubpiece {
   width: 150px;             
-  height: 400px;            
+  height: 560px;            
   background-color: #354464; 
   display: flex;
   justify-content: center;  
@@ -94,6 +97,54 @@ h1, h2, h3 {
   position: absolute;
   top: 5%;
   left: 27%;
+  outline: 4px solid black;
+}
+.hubpiece3 {
+  width: 375px;             
+  height: 327.5px;            
+  background-color: #354464; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 7px 7px;
+  position: absolute;
+  top: 23.5%;
+  left: 27%;
+  outline: 4px solid black;
+}
+.hubpiece4 {
+  width: 487px;             
+  height: 100px;            
+  background-color: #354464; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 7px 7px;
+  position: absolute;
+  top: 78.5%;
+  left: 27%;
+  outline: 4px solid black;
+}
+.hubpiece5 {
+  width: 100px;             
+  height: 200px;            
+  background-color: #354464; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 7px 7px;
+  position: absolute;
+  top: 20%;
+  left: 68.5%;
   outline: 4px solid black;
 }
 /*.showcase {
