@@ -12,7 +12,7 @@ export default {
 <template>
 <div class="contentpage">
   <div class="profile">
-    <img class="portrait-photo" src="src/assets/portrait.jpg" alt="Avatar"/>
+    <img class="portrait-photo" src="@/assets/portrait.jpg" alt="Avatar"/>
     <div class="profile-details">
       <h4 class="name-title">im trajon</h4>
       <p class="profile-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non augue tortor. 

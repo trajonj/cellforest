@@ -13,19 +13,19 @@ export default {
 
     <div class="social-icons">
       <a href="https://www.instagram.com/trajon.j/">
-        <img src="src/assets/instagram.png" alt="Instagram" width="20" height="20"/>
+        <img src="@/assets/instagram.png" alt="Instagram" width="20" height="20"/>
       </a>
       <a href="https://www.tiktok.com/@trajonj">
-        <img src="src/assets/tik-tok.png" alt="tiktok" width="20" height="20"/>
+        <img src="@/assets/tik-tok.png" alt="tiktok" width="20" height="20"/>
       </a>
       <a href="https://twitter.com/trajonj">
-        <img src="src/assets/twitter.png" alt="twitter" width="20" height="20"/>
+        <img src="@/assets/twitter.png" alt="twitter" width="20" height="20"/>
       </a>
       <a href="https://www.youtube.com/channel/UCDd0g1jvbjNzlEDXATTdHpQ">
-        <img src="src/assets/youtube.png" alt="youtube" width="20" height="20"/>
+        <img src="@/assets/youtube.png" alt="youtube" width="20" height="20"/>
       </a>
       <a href="trajon2011@gmail.com">
-        <img src="src/assets/email.png" alt="email" width="20" height="20"/>
+        <img src="@/assets/email.png" alt="email" width="20" height="20"/>
       </a>
     </div>
   </footer>

@@ -1,19 +1,25 @@
 <script>
-import FooterComponent from '../components/footerComponent.vue';
+/*import FooterComponent from '../components/footerComponent.vue';*/
 
 export default {
   name: 'HomeView',
-  components: {
+  /*components: {
     FooterComponent
-  },
+  },*/
 }
 </script>
 
 <template>
   <div class="contentpage">
-      <img src="../assets/dummy4.jpg" class="showcase" alt="showcase1">
+      <!--<img src="../assets/dummy4.jpg" class="showcase" alt="showcase1">
       <img src="../assets/dummy5.jpg" class="showcase" alt="showcase1">
-      <img src="../assets/dummy6.jpg" class="showcase" alt="showcase1">
+      <img src="../assets/dummy6.jpg" class="showcase" alt="showcase1">-->
+
+      <div class="hubbox">
+        
+
+      </div>
+      <div class="hubpiece"></div>
   </div>
   <footer>
     <FooterComponent />
@@ -38,12 +44,43 @@ h1, h2, h3 {
 .contentpage {
     font-size: 13px;
     font-family: "Courier New", Courier, monospace;
-    min-height: 500px;
+    /*min-height: 500px;*/
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
 }
-.showcase {
+.hubbox {
+  width: 800px;             
+  height: 600px;            
+  background-color: #354464; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border-style: ridge;
+  border-width: 7px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px;
+  position: relative; 
+}
+.hubpiece {
+  width: 200px;             
+  height: 400px;            
+  background-color: #354464; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border-style: ridge;
+  border-width: 7px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+/*.showcase {
   width: 400px;
   height: 400px;
-}
+}*/
 </style>
