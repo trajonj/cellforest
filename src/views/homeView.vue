@@ -15,11 +15,10 @@ export default {
       <img src="../assets/dummy5.jpg" class="showcase" alt="showcase1">
       <img src="../assets/dummy6.jpg" class="showcase" alt="showcase1">-->
 
-      <div class="hubbox">
-        
-
-      </div>
+      <div class="hubbox"></div>
       <div class="hubpiece"></div>
+      <div class="hubpiece2"></div>
+
   </div>
   <footer>
     <FooterComponent />
@@ -59,25 +58,43 @@ h1, h2, h3 {
   justify-content: center;  
   align-items: center;      
   border-style: ridge;
-  border-width: 7px;
+  border-width: 5px;
   border-color: rgb(80, 138, 255);
   border-radius: 7px;
   position: relative; 
+  outline: 4px solid black;
 }
 .hubpiece {
-  width: 200px;             
+  width: 150px;             
   height: 400px;            
   background-color: #354464; 
   display: flex;
   justify-content: center;  
   align-items: center;      
   border-style: ridge;
-  border-width: 7px;
+  border-width: 5px;
   border-color: rgb(80, 138, 255);
-  border-radius: 7px;
+  border-radius: 7px 7px 0px 50px;
   position: absolute;
   top: 5%;
   left: 3%;
+  outline: 4px solid black;
+}
+.hubpiece2 {
+  width: 487px;             
+  height: 100px;            
+  background-color: #354464; 
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 7px 7px;
+  position: absolute;
+  top: 5%;
+  left: 27%;
+  outline: 4px solid black;
 }
 /*.showcase {
   width: 400px;
