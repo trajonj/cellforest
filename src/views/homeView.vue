@@ -17,7 +17,9 @@ export default {
 
       <div class="hubbox">
       <div class="hubpiece"></div>
-      <div class="hubpiece2"></div>
+      <div class="hubpiece2">
+        <h1>QUXK</h1>
+      </div>
       <div class="hubpiece3"></div>
       <div class="hubpiece4"></div>
       <div class="hubpiece5"></div>
@@ -43,11 +45,17 @@ body {
     font-size: 14px;
     /* Replace #333333 with your desired font color */
   }
-h1, h2, h3 {
-    color: #d4d4d4de;
-    font-size: 17px;
-    /* Replace #333333 with your desired font color */
-  }
+  @font-face {
+  font-family: "ledlight";
+  src: url("@/assets/fonts/ledlight/LEDLIGHT.otf") format("OpenType");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "ledlight", sans-serif;
+  color: #d4d4d4de;
+  font-size: 72px;
+}
 .container {
   width: 100%;
   display: flex;
