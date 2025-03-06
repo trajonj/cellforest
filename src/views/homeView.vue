@@ -15,12 +15,17 @@ export default {
       <img src="../assets/dummy5.jpg" class="showcase" alt="showcase1">
       <img src="../assets/dummy6.jpg" class="showcase" alt="showcase1">-->
 
-      <div class="hubbox"></div>
+      <div class="hubbox">
       <div class="hubpiece"></div>
       <div class="hubpiece2"></div>
       <div class="hubpiece3"></div>
       <div class="hubpiece4"></div>
       <div class="hubpiece5"></div>
+      <div class="hubpiece6"></div>
+      <div class="hubpiece7"></div>
+      <div class="hubpiece8"></div>
+      </div>
+
 
   </div>
   <footer>
@@ -43,108 +48,134 @@ h1, h2, h3 {
     font-size: 17px;
     /* Replace #333333 with your desired font color */
   }
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contentpage {
-    font-size: 13px;
-    font-family: "Courier New", Courier, monospace;
-    /*min-height: 500px;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
+  width: 100%;             /* Takes full width of the parent container */
+  height: 70vh;           /* Full viewport height */
+  display: flex;           /* Enable flexbox */
+  justify-content: center; /* Center .hubbox horizontally */
+  align-items: center;     /* Center .hubbox vertically */
 }
 .hubbox {
-  width: 800px;             
-  height: 600px;            
-  background-color: #354464; 
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  width: 1000px;           /* Fixed width */
+  height: 900px;           /* Fixed height */
+  background-color: #354464;
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
   border-radius: 7px;
-  position: relative; 
+  position: relative;
   outline: 4px solid black;
 }
 .hubpiece {
   width: 150px;             
-  height: 560px;            
-  background-color: #354464; 
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  height: 530px;            
+  background-color: #354464;       
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
-  border-radius: 7px 7px 0px 50px;
+  border-radius: 7px 7px 0px 70px;
   position: absolute;
-  top: 5%;
-  left: 3%;
+  top: 20%;
+  left: 2%;
   outline: 4px solid black;
+
 }
 .hubpiece2 {
-  width: 487px;             
-  height: 100px;            
-  background-color: #354464; 
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  width: 950px;             
+  height: 150px;            
+  background-color: #354464;     
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
-  border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 70px 70px;
   position: absolute;
-  top: 5%;
-  left: 27%;
+  top: 2%;
+  left: 2%;
   outline: 4px solid black;
 }
 .hubpiece3 {
-  width: 375px;             
-  height: 327.5px;            
-  background-color: #354464; 
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  width: 621px;             
+  height: 250px;            
+  background-color: #354464;     
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
   border-radius: 7px 7px 7px 7px;
   position: absolute;
-  top: 23.5%;
-  left: 27%;
+  top: 20.5%;
+  left: 183px;
   outline: 4px solid black;
 }
 .hubpiece4 {
-  width: 487px;             
-  height: 100px;            
-  background-color: #354464; 
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  width: 950px;             
+  height: 150px;            
+  background-color: #354464;     
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
-  border-radius: 7px 7px 7px 7px;
+  border-radius: 70px 70px 7px 7px;
   position: absolute;
-  top: 78.5%;
-  left: 27%;
+  top: 81%;
+  left: 2%;
   outline: 4px solid black;
 }
 .hubpiece5 {
-  width: 100px;             
-  height: 200px;            
-  background-color: #354464; 
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
+  width: 150px;             
+  height: 530px;            
+  background-color: #354464;       
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 70px 0px;
+  position: absolute;
+  top: 20%;
+  left: 82.5%;
+  outline: 4px solid black;
+
+}
+.hubpiece6 {
+  width: 621px;             
+  height: 80px;            
+  background-color: #354464;     
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
   border-radius: 7px 7px 7px 7px;
   position: absolute;
-  top: 20%;
-  left: 68.5%;
+  top: 50%;
+  left: 183px;
+  outline: 4px solid black;
+}
+.hubpiece7 {
+  width: 310.5px;             
+  height: 170px;            
+  background-color: #354464;     
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 7px 7px;
+  position: absolute;
+  top: 60.25%;
+  left: 183px;
+  outline: 4px solid black;
+}
+.hubpiece8 {
+  width: 305px;             
+  height: 170px;            
+  background-color: #354464;     
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(80, 138, 255);
+  border-radius: 7px 7px 7px 7px;
+  position: absolute;
+  top: 60.25%;
+  left: 500px;
   outline: 4px solid black;
 }
 /*.showcase {
