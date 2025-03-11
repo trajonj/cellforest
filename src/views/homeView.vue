@@ -34,18 +34,21 @@ h1 {
   font-size: 72px;
 }
 .hubbox {
-  width: 10px;           /* Fixed width */
-  height: 9px;           /* Fixed height */
+  width: 700px;          
+  height: 500px;          
   background-color: #354464;
   border-style: ridge;
   border-width: 5px;
   border-color: rgb(80, 138, 255);
   border-radius: 7px;
-  position: relative;
   outline: 4px solid black;
+  box-sizing: border-box;
+
+  padding: 5px 5px 5px;
+  margin: 50px 50px 50px;
 }
 .contentpage {
-  width: 100%;             /* Takes full width of the parent container */
+  width: 800px;             /* Takes full width of the parent container */
   height: 70vh;           /* Full viewport height */
   display: flex;           /* Enable flexbox */
   justify-content: center; /* Center .hubbox horizontally */
