@@ -14,7 +14,11 @@ export default {
 
 <style>
 html, body {
-  background-color: #1b1b1b;
+  height: 100%;  /* Ensures full height */
+  margin: 0;
+  padding: 0;
+  background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image fills the entire screen */
 }
 
 body {
@@ -36,22 +40,24 @@ h1 {
 .hubbox {
   width: 700px;          
   height: 500px;          
-  background-color: #354464;
+  background-color: rgba(0, 0, 0, 0.5);
   border-style: ridge;
   border-width: 5px;
-  border-color: rgb(80, 138, 255);
+  border-color: rgb(201, 201, 201);
   border-radius: 7px;
-  outline: 4px solid black;
+  /*outline: 4px solid black;*/
   box-sizing: border-box;
+  position: fixed;
 
   padding: 5px 5px 5px;
   margin: 50px 50px 50px;
 }
 .contentpage {
-  width: 800px;             /* Takes full width of the parent container */
+  width: 100vw;             /* Takes full width of the parent container */
   height: 70vh;           /* Full viewport height */
   display: flex;           /* Enable flexbox */
   justify-content: center; /* Center .hubbox horizontally */
   align-items: center;     /* Center .hubbox vertically */
 }
+
 </style>
