@@ -5,26 +5,28 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <h1>HOME</h1>
-    <p>Page content goes here</p>
-    <img src="@/assets/images/dummy4.jpg" alt="showcase1">
+<div class="contentpage">
+  <div class="hubbox">
+    <h1>TEST</h1>
   </div>
+</div>
 </template>
 
 <style>
-html, body, #app {
-  background-color: #1b1b1b;
+html, body {
+  height: 100%;  /* Ensures full height */
   margin: 0;
-  height: 100%;
+  padding: 0;
+  background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image fills the entire screen */
 }
 
 body {
     color: #d4d4d4de;
     font-size: 14px;
     /* Replace #333333 with your desired font color */
-  }
-@font-face {
+}
+  @font-face {
   font-family: "ledlight";
   src: url("@/assets/fonts/ledlight/LEDLIGHT.otf") format("OpenType");
   font-weight: normal;
@@ -36,13 +38,27 @@ h1 {
   font-size: 72px;
   text-align: center;
 }
-.container {
-  width: 1088px !important;
-  height: 1163px !important;
-  padding: 70px;
-  margin: 90px auto; /* Centers horizontally */
-  border: 5px solid rgb(91, 154, 255); /* Optional */
+.hubbox {
+  width: 700px;          
+  height: 500px;          
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(201, 201, 201);
+  border-radius: 7px;
+  /*outline: 4px solid black;*/
   box-sizing: border-box;
+  position: fixed;
+
+  padding: 5px 5px 5px;
+  margin: 50px 50px 50px;
+}
+.contentpage {
+  width: 100vw;             /* Takes full width of the parent container */
+  height: 70vh;           /* Full viewport height */
+  display: flex;           /* Enable flexbox */
+  justify-content: center; /* Center .hubbox horizontally */
+  align-items: center;     /* Center .hubbox vertically */
 }
 
 </style>
