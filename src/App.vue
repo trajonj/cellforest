@@ -1,7 +1,7 @@
 <template>
   <div class="backhome">
     <router-link to="/">
-      <img class="rotate-3d" src="./assets/images/rhurbo_logo_b.png" alt="Back to Home" width="50" height="50" />
+      <img class="rotate-3d" src="./assets/images/rhurbo_logo_c.png" alt="Back to Home" width="50" height="50" />
     </router-link>
   </div>
   <router-view></router-view>

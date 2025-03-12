@@ -7,7 +7,7 @@ export default {
 <template>
 <div class="contentpage">
   <div class="hubbox">
-    <h1>TEST</h1>
+    <div class="titlebar"><h1>RHURBO</h1></div>
   </div>
 </div>
 </template>
@@ -20,10 +20,9 @@ html, body {
   background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
   background-size: cover; /* Ensures the image fills the entire screen */
 }
-
 body {
     color: #d4d4d4de;
-    font-size: 14px;
+    font-size: 10px;
     /* Replace #333333 with your desired font color */
 }
   @font-face {
@@ -35,8 +34,14 @@ body {
 h1 {
   font-family: "ledlight", sans-serif;
   color: #d4d4d4de;
-  font-size: 72px;
+  font-size: 60px;
   text-align: center;
+}
+.titlebar{
+  width: 200px;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
 }
 .hubbox {
   width: 700px;          
