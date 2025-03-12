@@ -8,7 +8,10 @@ export default {
 <div class="contentpage">
   <div class="hubbox">
     <div class="titlebar"><h1>RHURBO</h1></div>
-    <div class="navbuttons"><button class="portfolio">Glassy</button></div>
+    <div class="navbuttons"><button class="portfolio">Portfolio</button>
+      <button class="portfolio">About</button>
+      <button class="portfolio">Portfolio</button>
+      <button class="portfolio">Portfolio</button></div>
   </div>
 </div>
 </template>
@@ -42,7 +45,7 @@ h1 {
   width: 200px;
   height: 70px;
   background-color: transparent;
-  position: fixed;
+  margin-left: 10px;
 }
 .hubbox {
   width: 700px;          
@@ -67,11 +70,24 @@ h1 {
   align-items: center;     /* Center .hubbox vertically */
 }
 .navbuttons{
-  width: 50px;
+  width: 70px;
   height: 100px;
   background-color: transparent;
-  position: fixed;
-}
+  border-style: ridge;
+  border-width: 5px;
+  border-color: rgb(201, 201, 201);
+  border-radius: 7px;
+  box-sizing: border-box;
 
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center buttons horizontally */
+  justify-content: center; /* Evenly distribute buttons */
+  gap: 5px; /* Adds spacing between buttons */
+  padding: 10px;
+}
+button.portfolio{
+
+}
 
 </style>
