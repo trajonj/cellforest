@@ -5,26 +5,24 @@ export default {
 </script>
 
 <template>
+
 <div class="contentpage">
   <div class="hubbox">
     <div class="titlebar"><h1>RHURBO</h1></div>
-      <!-- <div class="navbuttons"><button class="portfolio">Portfolio</button>
-      <button class="portfolio">About</button>
-      <button class="portfolio">Portfolio</button>
-        <button class="portfolio">Portfolio</button></div> -->
-
+    <v-app>
         <v-container class="d-flex justify-center">
             <v-card class="pa-4 tonal-card" variant="tonal" width="300">
               <v-btn-group vertical>
-              <v-btn variant="tonal" color="primary" to="/about">Button 1</v-btn>
+              <v-btn variant="tonal" color="primary" to="/aboutView">Button 1</v-btn>
               <v-btn variant="tonal" color="secondary" to="/portfolio">Button 2</v-btn>
               <v-btn variant="tonal" color="success" to="/resources">Button 3</v-btn>
               </v-btn-group>
             </v-card>
         </v-container>
-   
+      </v-app>
   </div>
 </div>
+
 </template>
 
 <style>

@@ -1,5 +1,7 @@
 import { createApp, markRaw } from 'vue'
 import App from './App.vue'
+import vuetify from './plugins/vuetify'
+import 'vuetify/styles'
 
 import router from './router'
 
@@ -17,4 +19,5 @@ pinia.use(({ store }) => {
 
 app.use(pinia)
 app.use(router)
+app.use(vuetify)
 app.mount('#app')
