@@ -8,10 +8,21 @@ export default {
 <div class="contentpage">
   <div class="hubbox">
     <div class="titlebar"><h1>RHURBO</h1></div>
-    <div class="navbuttons"><button class="portfolio">Portfolio</button>
+      <!-- <div class="navbuttons"><button class="portfolio">Portfolio</button>
       <button class="portfolio">About</button>
       <button class="portfolio">Portfolio</button>
-      <button class="portfolio">Portfolio</button></div>
+        <button class="portfolio">Portfolio</button></div> -->
+
+        <v-container class="d-flex justify-center">
+            <v-card class="pa-4 tonal-card" variant="tonal" width="300">
+              <v-btn-group vertical>
+              <v-btn variant="tonal" color="primary" to="/about">Button 1</v-btn>
+              <v-btn variant="tonal" color="secondary" to="/portfolio">Button 2</v-btn>
+              <v-btn variant="tonal" color="success" to="/resources">Button 3</v-btn>
+              </v-btn-group>
+            </v-card>
+        </v-container>
+   
   </div>
 </div>
 </template>
@@ -86,8 +97,10 @@ h1 {
   gap: 5px; /* Adds spacing between buttons */
   padding: 10px;
 }
-button.portfolio{
-
+.tonal-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
 }
 
 </style>
