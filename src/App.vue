@@ -1,22 +1,17 @@
 <template>
+  <v-app>
   <div class="backhome">
     <router-link to="/">
       <img class="rotate-3d" src="./assets/images/rhurbo_logo_c.png" alt="Back to Home" width="50" height="50" />
     </router-link>
   </div>
-  <router-view></router-view>
+  <router-view />
+  </v-app>
 </template>
   
 
 <script>
-/*import { RouterLink, RouterView } from 'vue-router'*/
-import { useLoggedInUserStore } from "@/store/loggedInUser";
-export default {
-  setup() {
-    const user = useLoggedInUserStore();
-    return { user };
-  },
-};
+
 </script>
 
 
