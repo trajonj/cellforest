@@ -1,16 +1,15 @@
+<script>
+import "bootstrap/dist/css/bootstrap.min.css";
+</script>
+
 <template>
 <div class="contentpage">
   <div class="hubbox">
-    <div class="titlebar"><h1>RHURBO</h1></div>   
-        <v-container class="d-flex justify-center">
-            <v-card class="pa-4 tonal-card" variant="tonal" width="300">
-              <v-btn><router-link class="nav-link" to="/about">about</router-link></v-btn>
-            </v-card>
-            <v-card class="pa-4 tonal-card" variant="tonal" width="300">
-              <v-btn><router-link class="nav-link" to="/contact">contact</router-link></v-btn>
-            </v-card>
-        </v-container>     
-    </div>
+    <div class="titlebar"><h1>ENIAC</h1></div>
+    <div class="navbox">
+      <router-link to="/about"><button class="abtbttn">about</button></router-link>
+      <router-link to="/contact"><button class="cntctbttn">contact</button></router-link></div>
+  </div>
 </div>
 </template>
 
@@ -22,11 +21,6 @@ html, body {
   background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
   background-size: cover; /* Ensures the image fills the entire screen */
 }
-body {
-    color: #d4d4d4de;
-    font-size: 10px;
-    /* Replace #333333 with your desired font color */
-}
 @font-face {
   font-family: "ledlight";
   src: url("@/assets/fonts/ledlight/LEDLIGHT.otf") format("OpenType");
@@ -36,7 +30,7 @@ body {
 h1 {
   font-family: "ledlight", sans-serif;
   color: #d4d4d4de;
-  font-size: 60px;
+  font-size: 60px !important;
   text-align: center;
 }
 .titlebar{
@@ -50,9 +44,9 @@ h1 {
   height: 500px;          
   background-color: rgba(0, 0, 0, 0.5);
   border-style: ridge;
-  border-width: 5px;
-  border-color: rgb(201, 201, 201);
-  border-radius: 7px;
+  border-width: 7px;
+  border-color: rgb(231, 231, 231);
+  border-radius: 4px;
   /*outline: 4px solid black;*/
   box-sizing: border-box;
   position: fixed;
@@ -84,10 +78,26 @@ h1 {
   gap: 5px; /* Adds spacing between buttons */
   padding: 10px;
 }
-.tonal-card {
-  background-color: rgba(227, 227, 227, 0.514);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-}
+/* ⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ ଘ(੭*ˊᵕˋ)੭*                            ੈ✩‧₊˚⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ */
+.navbox {
+  width: 120px;
+  height: 170px;
+  margin: 0 auto;
+  padding: 20px;
+  border-width: 4px;
+  border-radius: 4px;
+  border-style: ridge;
+  border-color: rgb(169, 169, 169);
+  position: absolute;
+  top: 70px;
+  left: 15px;
 
+}
+/* ｡*ﾟ✲*☆(๑òᆺó๑)｡*ﾟ✲*☆*̣̥☆·͙̥‧‧̩̥·‧•̥̩̥͙‧·‧̩̥˟͙冬˟͙‧̩̥·‧•̥̩̥͙‧·‧̩̥‧·͙̥̣☆*̣̥ */
+.abtbttn{
+
+}
+.cntctbttn{
+
+}
 </style>
