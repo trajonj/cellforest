@@ -7,7 +7,7 @@
               <v-btn><router-link class="nav-link" to="/about">about</router-link></v-btn>
             </v-card>
             <v-card class="pa-4 tonal-card" variant="tonal" width="300">
-              <v-btn><router-link class="nav-link" to="/about">about</router-link></v-btn>
+              <v-btn><router-link class="nav-link" to="/contact">contact</router-link></v-btn>
             </v-card>
         </v-container>     
     </div>
