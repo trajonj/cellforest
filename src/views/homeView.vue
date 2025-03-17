@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 <template>
 <div class="contentpage">
   <div class="hubbox">
-    <div class="titlebar"><h1>ENIAC</h1></div>
+    <div class="titlebar"><h1>TEST</h1></div>
     <div class="navbox">
       <router-link to="/about"><button class="abtbttn">about</button></router-link>
       <router-link to="/contact"><button class="cntctbttn">contact</button></router-link></div>
