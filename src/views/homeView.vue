@@ -12,7 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
       <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link></div>
     <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
     <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
-    <iframe src="https://rhurbo.blogspot.com" width="350" height="150px"></iframe>
+    <iframe src="https://rhurbo.blogspot.com" width="370" height="142px"></iframe>
 
   </div>
 </div>
@@ -115,5 +115,6 @@ iframe {
   left: 120px; /* Adjust the distance from the left */
   border: 7px solid #ccc; /* Border styling */
   border-style: ridge;
+  border-radius: 4px 70px 4px 40px;
 }
 </style>
