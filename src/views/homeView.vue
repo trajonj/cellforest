@@ -8,7 +8,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
     <div class="titlebar"><h1>TEST</h1></div>
     <div class="navbox">
       <router-link to="/about"><button class="abtbttn">about</button></router-link>
-      <router-link to="/contact"><button class="cntctbttn">contact</button></router-link></div>
+      <router-link to="/contact"><button class="cntctbttn">contact</button></router-link>
+      <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link></div>
+    <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
+    <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
+    <iframe src="https://rhurbo.blogspot.com" width="350" height="150px"></iframe>
+
   </div>
 </div>
 </template>
@@ -31,13 +36,19 @@ h1 {
   font-family: "ledlight", sans-serif;
   color: #d4d4d4de;
   font-size: 60px !important;
-  text-align: center;
+  text-align: left;
 }
 .titlebar{
-  width: 200px;
-  height: 70px;
-  background-color: transparent;
-  margin-left: 10px;
+  height: 80px;
+  width: 500px;
+  display: flex; /* Align buttons in a row */
+  flex-direction: column;
+  padding: 5px; /* Adds space inside the border */
+  margin: 2px;
+  border: 7px solid #ccc; /* Border styling */
+  border-style: ridge;
+  border-radius: 40px 4px 70px 4px; /* Optional: rounded edges */
+  background-color: rgba(76, 76, 76, 0.268); /* Light background */
 }
 .hubbox {
   width: 700px;          
@@ -49,7 +60,7 @@ h1 {
   border-radius: 4px;
   /*outline: 4px solid black;*/
   box-sizing: border-box;
-  position: fixed;
+  position: relative;
 
   padding: 5px 5px 5px;
   margin: 50px 50px 50px;
@@ -61,43 +72,48 @@ h1 {
   justify-content: center; /* Center .hubbox horizontally */
   align-items: center;     /* Center .hubbox vertically */
 }
-.navbuttons{
-  width: 70px;
-  height: 100px;
-  background-color: transparent;
-  border-style: ridge;
-  border-width: 5px;
-  border-color: rgb(201, 201, 201);
-  border-radius: 7px;
-  box-sizing: border-box;
-
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center buttons horizontally */
-  justify-content: center; /* Evenly distribute buttons */
-  gap: 5px; /* Adds spacing between buttons */
-  padding: 10px;
-}
 /* ⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ ଘ(੭*ˊᵕˋ)੭*                            ੈ✩‧₊˚⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ */
 .navbox {
-  width: 120px;
-  height: 170px;
-  margin: 0 auto;
-  padding: 20px;
-  border-width: 4px;
-  border-radius: 4px;
+  display: flex; /* Align buttons in a row */
+  flex-direction: column;
+  gap: 10px; /* Adds spacing between buttons */
+  padding: 5px; /* Adds space inside the border */
+  margin: 2px;
+  border: 7px solid #ccc; /* Border styling */
   border-style: ridge;
-  border-color: rgb(169, 169, 169);
-  position: absolute;
-  top: 70px;
-  left: 15px;
-
+  border-radius: 4px; /* Optional: rounded edges */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background */
+  width: fit-content; /* Adjusts to content width */
 }
 /* ｡*ﾟ✲*☆(๑òᆺó๑)｡*ﾟ✲*☆*̣̥☆·͙̥‧‧̩̥·‧•̥̩̥͙‧·‧̩̥˟͙冬˟͙‧̩̥·‧•̥̩̥͙‧·‧̩̥‧·͙̥̣☆*̣̥ */
 .abtbttn{
-
+  width: 80px;
+  margin: 2px;
 }
 .cntctbttn{
-
+  width: 80px;
+  margin: 2px;
+}
+.rscrsbttn{
+  width: 80px;
+  margin: 2px;
+}
+/* .scrtlogo img{
+  width: 100px;
+  height: auto;
+} */
+ /* .scrtlogo2 img{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+} */
+iframe {
+  position: absolute;
+  top: 90px;  /* Adjust the distance from the top */
+  left: 120px; /* Adjust the distance from the left */
+  border: 7px solid #ccc; /* Border styling */
+  border-style: ridge;
 }
 </style>
