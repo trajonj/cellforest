@@ -23,7 +23,7 @@ app.get('/api/blog-posts', async (req, res) => {
 
       if (entries && entries.length > 0) {
         const blogPosts =  entries.map(entry => ({
-          title: entry.title.$t,
+          // title: entry.title.$t,
           content: entry.content.$t,
           published: entry.published.$t,
         }));
