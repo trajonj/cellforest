@@ -1,6 +1,7 @@
 <template>
     <div>
-      <div v-if="posts.length === 0">Loading posts...</div>
+      <div v-if="loading">Loading posts...</div>
+      <div v-else-if="errorMessage">{{ errorMessage }}</div>
       <div v-for="(post, index) in posts" :key="index">
         <h2>{{ post.title }}</h2>
         <div v-html="post.content"></div>
@@ -14,22 +15,27 @@
   export default {
     data() {
       return {
-        posts: []
+        posts: [],
+        loading: true,
+        errorMessage: null
       };
     },
     created() {
-      axios.get('http://localhost:3000/api/posts')
+      axios.get('http://localhost:3000/api/blog-posts')
         .then(response => {
           this.posts = response.data;
+          this.loading = false;
         })
         .catch(error => {
           console.error('Error fetching blog posts:', error);
+          this.errorMessage = 'NOOOOOO ;W;';
+          this.loading = false;
         });
     }
   };
   </script>
   
-  <style scoped>
+  <style>
   h1 {
     font-size: 2em;
     margin-bottom: 1em;
