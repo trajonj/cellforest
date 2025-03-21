@@ -23,9 +23,8 @@ export default {
       <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link></div>
     <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
     <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
-    <!-- <iframe src="https://rhurbo.blogspot.com" width="370" height="142"></iframe> -->
     <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
-    <div class="marqueebox" style="width: 370px; height: 142px;"><marquee></marquee></div>
+    <div class="marqueebox"><marquee></marquee></div>
   </div>
 
 </div>
@@ -122,14 +121,7 @@ h1 {
   bottom: 5px;
   left: 5px;
 } */
-iframe {
-  position: absolute;
-  top: 90px;  /* Adjust the distance from the top */
-  left: 120px; /* Adjust the distance from the left */
-  border: 7px solid #ccc; /* Border styling */
-  border-style: ridge;
-  border-radius: 4px 70px 4px 40px;
-}
+
 .apiblog {
   position: absolute;
   top: 90px;
@@ -146,6 +138,22 @@ iframe {
 }
 .apiblog * {
   direction: ltr; /* Resets child elements to normal left-to-right */
+}
+.marqueebox {
+  position: absolute; /* Position relative to .hubbox */
+  top: 460px;
+  width: 700px;
+}
+.marquee-text-wrap {
+  width: 700px;
+  height: 40px;
+  top: 460px;
+  border: 4px solid red;
+}
+.marquee-text-text {
+  width: 700px;
+  height: 40px;
+  top: 460px;
 }
 
 </style>
