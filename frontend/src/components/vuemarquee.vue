@@ -1,23 +1,17 @@
 <script>
+import Marquee from 'vue-marquee-text-component';
+
 export default {
-  name: 'vueMarquee',
-  data() {
-    return {
-    };
+  components: {
+    Marquee
   }
 };
 </script>
 
 <template>
-<vueMarquee
-  id="marquee-slider-text"
-  :space="150"
-  :speed="10000"
-  :width="200"
->
-  <span>Schnapsterdog</span>
-  <span>Vue.js</span>
-  <span>Nuxt.js</span>
-  <span>vue3-marquee-slider</span>
-</vueMarquee>
+  <div>
+    <Marquee :speed="50">
+      <p>Your scrolling text here</p>
+    </Marquee>
+  </div>
 </template>

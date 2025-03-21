@@ -1,11 +1,13 @@
 <script>
 import "bootstrap/dist/css/bootstrap.min.css";
 import BlogPosts from '@/components/BlogPosts.vue';
+import marquee from '@/components/vuemarquee.vue';
 
 export default {
   name: 'App',
   components: {
-    BlogPosts
+    BlogPosts,
+    marquee
   }
 };
 
@@ -23,6 +25,7 @@ export default {
     <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
     <!-- <iframe src="https://rhurbo.blogspot.com" width="370" height="142"></iframe> -->
     <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
+    <div class="marqueebox" style="width: 370px; height: 142px;"><marquee></marquee></div>
   </div>
 
 </div>
