@@ -21,10 +21,8 @@ export default {
       <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link></div>
     <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
     <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
-    <iframe src="https://rhurbo.blogspot.com" width="370" height="142"></iframe>
-    <div id="app">
-      <BlogPosts />
-    </div>
+    <!-- <iframe src="https://rhurbo.blogspot.com" width="370" height="142"></iframe> -->
+    <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
   </div>
 
 </div>
@@ -92,8 +90,7 @@ h1 {
   gap: 10px; /* Adds spacing between buttons */
   padding: 5px; /* Adds space inside the border */
   margin: 2px;
-  border: 7px solid #ccc; /* Border styling */
-  border-style: ridge;
+  border: 7px ridge #ccc; /* Border styling */
   border-radius: 4px; /* Optional: rounded edges */
   background-color: rgba(255, 255, 255, 0.1); /* Light background */
   width: fit-content; /* Adjusts to content width */
@@ -130,15 +127,22 @@ iframe {
   border-style: ridge;
   border-radius: 4px 70px 4px 40px;
 }
-.apiblog{
+.apiblog {
   position: absolute;
-  top: 240px;  /* Adjust the distance from the top */
-  left: 120px; /* Adjust the distance from the left */
-  border: 7px solid #ccc; /* Border styling */
-  border-style: ridge;
+  top: 90px;
+  left: 120px;
+  background-color: rgba(255, 255, 255, 0.907);
+  font-size: 10px;
+  overflow: auto; /* Enable vertical scrolling */
+  border: 7px ridge #ccc;
   border-radius: 4px 70px 4px 40px;
-  width: 370px;
-  height: 142px;
+  padding: 10px 10px;
+
+  direction: rtl; /* Moves the scrollbar to the left */
+  text-align: left; /* Ensures text stays left-aligned */
+}
+.apiblog * {
+  direction: ltr; /* Resets child elements to normal left-to-right */
 }
 
 </style>

@@ -4,8 +4,8 @@
       <div v-else-if="errorMessage">{{ errorMessage }}</div>
       <div v-for="(post, index) in posts" :key="index">
         <!-- <h2>{{ post.title }}</h2> -->
-        <div v-html="post.content"></div>
         <div v-html="post.published"></div>
+        <div v-html="post.content"></div>
       </div>
     </div>
   </template>
