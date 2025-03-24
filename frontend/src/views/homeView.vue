@@ -145,9 +145,9 @@ h1 {
 .marquee-text-wrap {
   position: relative;
   margin: auto;
-  width: 700px;
-  height: 40px;
-  border: 4px solid red;
+  right: 10.6px;
+  width: 687px;
+  height: 30px;
 }
 .marquee-text-text {
   width: 700px;
