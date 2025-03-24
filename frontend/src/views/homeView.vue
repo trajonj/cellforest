@@ -3,11 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BlogPosts from '@/components/BlogPosts.vue';
 import marquee from '@/components/vuemarquee.vue';
 
+
 export default {
   name: 'App',
   components: {
     BlogPosts,
-    marquee
+    marquee,
   }
 };
 
@@ -17,10 +18,11 @@ export default {
 <div class="contentpage">
   <div class="hubbox">
     <div class="titlebar"><h1>CELLFOREST</h1></div>
-    <div class="navbox">
+    <div class="navbox" style="height: 142px;">
       <router-link to="/about"><button class="abtbttn">about</button></router-link>
       <router-link to="/contact"><button class="cntctbttn">contact</button></router-link>
-      <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link></div>
+      <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link>
+    </div>
     <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
     <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
     <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
@@ -43,6 +45,14 @@ html, body {
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "millenium_2";
+  src: url("@/assets/fonts/millenium_2/Millenium-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
   font-family: "ledlight", sans-serif;
   color: #d4d4d4de;
@@ -87,6 +97,7 @@ h1 {
 .navbox {
   display: flex; /* Align buttons in a row */
   flex-direction: column;
+  justify-content: center;
   gap: 10px; /* Adds spacing between buttons */
   padding: 5px; /* Adds space inside the border */
   margin: 2px;
@@ -126,6 +137,7 @@ h1 {
   left: 120px;
   background-color: rgba(255, 255, 255, 0.907);
   font-size: 10px;
+  color: #1b1b1b;
   overflow: auto; /* Enable vertical scrolling */
   border: 7px ridge #ccc;
   border-radius: 4px 70px 4px 40px;
@@ -145,14 +157,18 @@ h1 {
 .marquee-text-wrap {
   position: relative;
   margin: auto;
-  right: 10.6px;
-  width: 687px;
-  height: 30px;
+  top: 7px;
+  right: 11px;
+  width: 686.5px;
+  height: 20px;
+  background-color: #1b1b1b;
 }
 .marquee-text-text {
   width: 700px;
   height: 40px;
   top: 460px;
+  color: #ccc;
+  font-family: SimSun-ExtB;
 
 }
 

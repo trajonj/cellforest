@@ -1,6 +1,7 @@
 <script>
-import FooterComponent from '../components/footerComponent.vue';
-import emailjs from 'emailjs-com';
+import "bootstrap/dist/css/bootstrap.min.css";
+import * as emailjs from 'emailjs-com';
+import navigationbuttons from '@/components/navbuttons.vue';
 
 export default {
   name: 'ContactUs',
@@ -15,8 +16,11 @@ export default {
   methods: {
     async sendEmail(e) {
       try {
-        await emailjs.sendForm('contact_service', 'contact_template', e.target,
-        'x15gAetF1SfxBhF7x', {
+        await emailjs.sendForm(
+          'contact_service', 
+          'contact_template', 
+          e.target,
+          'x15gAetF1SfxBhF7x', {
           name: this.name,
           email: this.email,
           message: this.message
@@ -32,76 +36,172 @@ export default {
       this.message = ''
     },
   },
-  name: 'ContactView',
   components: {
-    FooterComponent
+    navigationbuttons,
   }
 }
 </script>
 
 <template>
   <div class="contentpage">
-    <form @submit.prevent="sendEmail">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-  
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-  
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="8" required></textarea>
-  
-        <button type="submit">Submit</button>
-
-        <div v-if="showConfirmation" class="confirmation-message">
-        <p>Message recieved.</p>
-        </div>
-
-      </form>
+    <div class="hubbox">
+      <div class = "contactform">
+        <form @submit.prevent="sendEmail">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" class="namefield" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="emailfield" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="8" class="messagefield" required></textarea>
+            <div><button type="submit">Submit</button></div>
+          <div v-if="showConfirmation" class="confirmation-message">
+          <p>Message recieved.</p>
+          </div>
+        </form>
       </div>
-      <footer>
-        <FooterComponent />
-      </footer>
+    </div>
+  </div>
 </template>
   
 <style>
-  html, body {
-    background-color: #1b1b1b;
-  }
-  
-  body {
-      color: #d4d4d4de;
-      font-size: 14px;
-    }
-  h1, h2, h3 {
-      color: #d4d4d4de;
-      font-size: 17px;
-    }
-  .contentpage {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 50vh;
-    }
+@font-face {
+  font-family: "millenium_2";
+  src: url("@/assets/fonts/millenium_2/Millenium-Regular_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  height: 100%;  /* Ensures full height */
+  margin: 0;
+  padding: 0;
+  background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image fills the entire screen */
+}
+h1 {
+  font-family: "ledlight", sans-serif;
+  color: #d4d4d4de;
+  font-size: 60px !important;
+  text-align: left;
+}
+.contentpage {
+  width: 100vw;             /* Takes full width of the parent container */
+  height: 70vh;           /* Full viewport height */
+  display: flex;           /* Enable flexbox */
+  justify-content: center; /* Center .hubbox horizontally */
+  align-items: center;     /* Center .hubbox vertically */
+}
+.hubbox {
+  width: 700px;          
+  height: 500px;          
+  background-color: rgba(0, 0, 0, 0.5);
+  border-style: ridge;
+  border-width: 7px;
+  border-color: rgb(231, 231, 231);
+  border-radius: 4px;
+  /*outline: 4px solid black;*/
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .form-container {
-      width: 640px;
-      height: 1435px;
-      margin-top: 10px;
-    }
-  
-  label {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 16px;
-  }
+  padding: 5px 5px 5px;
+  margin: 50px 50px 50px;
+}
+.contactform {
+  width: 500px;          
+  height: 400px;          
+  background-color: #e3e3e3;
+  border-style: ridge;
+  border-width: 7px;
+  border-color: rgb(231, 231, 231);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.namefield {
+  height: 20px;
+}
+.emailfield {
+  height: 20px;
+}
+.messagefield {
+  height: 100px;
+}
+.contactform form {
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactform .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%; 
+  margin-bottom: 15px; 
+}
 
-  form {
-      width: 500px;
-      padding-bottom: 50px;
-      padding-top: 25px;
-    }
+.contactform .form-group label {
+  align-self: flex-start; 
+  margin-bottom: 5px; 
+}
+.contactform label {
+  font-family: millenium_2;
+  font-size: 12px;
+}
 
-    input[type="text"],
+.contactform input,
+.contactform textarea {
+  width: 80%;
+  text-align: left;
+  font-size: 10px;
+}
+.contactform input:focus,
+.contactform textarea:focus {
+  width: 80%;
+  background-color: #e9dcc2;
+}
+.contactform button {
+  height: 20px;
+  width: 50px;
+  font-size: 8px;
+}
+.contactform button:hover {
+  background-color: #c1c1c1;
+}
+.contactform .confirmation-message {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #61af67;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+
+    /* .form-container {
+        width: 640px;
+        height: 1435px;
+        margin-top: 10px;
+      } */
+    
+    /* label {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    } */
+
+    /* form {
+        width: 500px;
+        padding-bottom: 50px;
+        padding-top: 25px;
+      } */
+
+    /* input[type="text"],
     input[type="email"],
     textarea {
       font-family: Arial, Helvetica, sans-serif;
@@ -112,9 +212,9 @@ export default {
       color: #FFFFFF;
       border-radius: 2%;
       color: #FFFFFF;
-    }
+    } */
     
-    .confirmation-message {
+    /* .confirmation-message {
     margin-top: 10px;
     padding: 10px;
     background-color: #61af67;
@@ -123,25 +223,21 @@ export default {
     text-align: center;
     width: 500px;
     height: 30;
-    }
+    } */
 
-    button[type="submit"] {
+    /* button[type="submit"] {
     background-color: #e4e4e4;
     color: #000000;
     border: none;
-    padding: 8px 16px;
+    padding: 2px 4px;
     cursor: pointer;
-    border-radius: 4px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: SimSun-ExtB;
     font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
     margin-top: 10px;
-    }
+    } */
 
-    button[type="submit"]:hover {
+    /* button[type="submit"]:hover {
       background-color: #c1c1c1;
-    }
+    } */
 
 </style>
