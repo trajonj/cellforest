@@ -15,18 +15,3 @@ export default {
     </Marquee>
   </div>
 </template>
-
-<style>
-.marquee-text-wrap {
-  width: 700px;
-  top: 460px;
-}
-.marquee-text-text {
-  width: 700px;
-  height: 40px;
-  top: 460px;
-}
-.marquee-text-content {
-  width: 700px;
-}
-</style>
