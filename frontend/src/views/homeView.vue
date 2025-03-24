@@ -26,9 +26,7 @@ export default {
     <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
     <div class="marqueebox"><marquee></marquee></div>
   </div>
-
 </div>
-
 </template>
 
 <style>
@@ -145,15 +143,17 @@ h1 {
   width: 700px;
 }
 .marquee-text-wrap {
+  position: relative;
+  margin: auto;
   width: 700px;
   height: 40px;
-  top: 460px;
   border: 4px solid red;
 }
 .marquee-text-text {
   width: 700px;
   height: 40px;
   top: 460px;
+
 }
 
 </style>
