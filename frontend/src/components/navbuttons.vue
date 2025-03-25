@@ -1,11 +1,11 @@
 <template>
     <div class = "navbuttons">
         <span class="bckbttn">
-            <button @click="goBack" class="bckbttn">←</button>
+            <button @click="goBack" class="bckbttn">back</button>
         </span>
-        <span class="fwdbttn">
+        <!-- <span class="fwdbttn">
             <button @click="goForward" class="fwdbttn">→</button>
-        </span>
+        </span> -->
     </div>
 </template>
 

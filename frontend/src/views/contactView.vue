@@ -47,7 +47,7 @@ export default {
     <div class="hubbox"><navigationbuttons />
       <div class = "contactform">
         <div class="holler"><h2>Contact Us</h2></div>
-        <div class="talk"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+        <p class="talk">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <form @submit.prevent="sendEmail">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" class="namefield" required>
@@ -119,9 +119,10 @@ html, body {
 }
 .talk {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border-radius: 8px;
-  font-family: "millennium_2";
+  font-size: 10px;
+  color:#000000;
 }
 .holler {
   margin-top: 0;
@@ -182,8 +183,8 @@ html, body {
   margin-bottom: 5px; 
 }
 .contactform label {
-  font-family: millenium_2;
   font-size: 12px;
+  color:#000000
 }
 
 .contactform input,
@@ -191,6 +192,7 @@ html, body {
   width: 80%;
   text-align: left;
   font-size: 10px;
+  color: #000000
 }
 .contactform input:focus,
 .contactform textarea:focus {
@@ -198,9 +200,11 @@ html, body {
   background-color: #e9dcc2;
 }
 .contactform button {
+  margin: 5px 5px 5px 0px;
   height: 20px;
   width: 50px;
   font-size: 8px;
+  color: #000000;
 }
 .contactform button:hover {
   background-color: #c1c1c1;

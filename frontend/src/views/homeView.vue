@@ -26,6 +26,7 @@ export default {
     <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
     <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
     <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
+    <div class="towertwo"></div>
     <div class="marqueebox"><marquee></marquee></div>
   </div>
 </div>
@@ -45,20 +46,19 @@ html, body {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: "millenium_2";
   src: url("@/assets/fonts/millenium_2/Millenium-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 h1 {
   font-family: "ledlight", sans-serif;
   color: #d4d4d4de;
   font-size: 60px !important;
   text-align: left;
 }
+/* ( ʃƪ˘ﻬ˘)(˘ ε˘ʃƪ) */
 .titlebar{
   height: 80px;
   width: 500px;
@@ -121,18 +121,7 @@ h1 {
   width: 80px;
   margin: 2px;
 }
-/* .scrtlogo img{
-  width: 100px;
-  height: auto;
-} */
- /* .scrtlogo2 img{
-  width: 200px;
-  height: auto;
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-} */
-
+/* (⋆ˆ ³ ˆ)♥ ★⌒ヽ( ͡° ε ͡°)♥ */
 .apiblog {
   position: absolute;
   top: 90px;
@@ -142,7 +131,7 @@ h1 {
   color: #1b1b1b;
   overflow: auto; /* Enable vertical scrolling */
   border: 7px ridge #ccc;
-  border-radius: 4px 70px 4px 40px;
+  border-radius: 4px 70px 4px 4px;
   padding: 10px 10px;
 
   direction: rtl; /* Moves the scrollbar to the left */
@@ -151,6 +140,7 @@ h1 {
 .apiblog * {
   direction: ltr; /* Resets child elements to normal left-to-right */
 }
+/* (✿ŎヮŎ)｡:ﾟ૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡ */
 .marqueebox {
   position: absolute; /* Position relative to .hubbox */
   top: 460px;
@@ -182,5 +172,12 @@ h1 {
   color: #ccc;
   font-family: SimSun-ExtB;
 }
-
+/* ⋆୨୧˚૮ ＾ﻌ＾ა˚୨୧⋆ʕっ•ᴥ•ʔっ */
+.towertwo{
+  position: absolute;
+  right: 5px;
+  width: 100px;
+  height: 100px;
+  border: 4px solid red;
+}
 </style>

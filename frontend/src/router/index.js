@@ -18,6 +18,11 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/contactView.vue')
     },
+    {
+      path: '/resources',
+      name: 'resources',
+      component: () => import('../views/resourcesView.vue')
+    },
     // {
     //   path: '/2D',
     //   name: '2D',
