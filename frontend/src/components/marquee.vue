@@ -45,7 +45,6 @@ export default {
   height: 50px; /* Height of the ticker */
   background-color: #ccc; /* Dark background color */
   color: rgb(0, 0, 0); /* White text color */
-  padding: 10px 0;
   overflow: hidden; /* Ensures the content doesn't overflow */
   position: relative;
 }

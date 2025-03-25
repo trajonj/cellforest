@@ -95,6 +95,8 @@ h1 {
 }
 /* ⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ ଘ(੭*ˊᵕˋ)੭*                            ੈ✩‧₊˚⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ */
 .navbox {
+  position: absolute;
+  top: 89px;
   display: flex; /* Align buttons in a row */
   flex-direction: column;
   justify-content: center;
@@ -155,21 +157,30 @@ h1 {
   width: 700px;
 }
 .marquee-text-wrap {
-  position: relative;
+  position: absolute;
   margin: auto;
+  right: 18px;
   top: 7px;
-  right: 11px;
   width: 686.5px;
   height: 20px;
   background-color: #1b1b1b;
 }
 .marquee-text-text {
+  visibility: visible;
   width: 700px;
   height: 40px;
   top: 460px;
   color: #ccc;
   font-family: SimSun-ExtB;
 
+}
+.marquee-text-text p {
+  visibility: visible;
+  width: 700px;
+  height: 40px;
+  top: 460px;
+  color: #ccc;
+  font-family: SimSun-ExtB;
 }
 
 </style>

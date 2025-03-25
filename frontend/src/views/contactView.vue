@@ -44,8 +44,10 @@ export default {
 
 <template>
   <div class="contentpage">
-    <div class="hubbox">
+    <div class="hubbox"><navigationbuttons />
       <div class = "contactform">
+        <div class="holler"><h2>Contact Us</h2></div>
+        <div class="talk"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
         <form @submit.prevent="sendEmail">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" class="namefield" required>
@@ -65,8 +67,14 @@ export default {
   
 <style>
 @font-face {
-  font-family: "millenium_2";
-  src: url("@/assets/fonts/millenium_2/Millenium-Regular_0.ttf") format("truetype");
+  font-family: "metalblockultra";
+  src: url("@/assets/fonts/metalblockultra/MetalBlockUltra.ttf") format("TrueType");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "millennium_2";
+  src: url("@/assets/fonts/millennium_2/Millennium-Regular-0.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal;
 }
@@ -77,10 +85,10 @@ html, body {
   background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
   background-size: cover; /* Ensures the image fills the entire screen */
 }
-h1 {
-  font-family: "ledlight", sans-serif;
-  color: #d4d4d4de;
-  font-size: 60px !important;
+p {
+  font-family: "millennium_2";
+  color: #1b1b1b;
+  font-size: 14px !important;
   text-align: left;
 }
 .contentpage {
@@ -102,11 +110,26 @@ h1 {
   box-sizing: border-box;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   padding: 5px 5px 5px;
   margin: 50px 50px 50px;
+}
+.talk {
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-family: "millennium_2";
+}
+.holler {
+  margin-top: 0;
+  padding-top: 0;
+}
+.holler h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "metalblockultra", sans-serif;
+  color: #a2a2a2de;
+  font-size: 60px !important;
 }
 .contactform {
   width: 500px;          
@@ -117,8 +140,12 @@ h1 {
   border-color: rgb(231, 231, 231);
   border-radius: 4px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 10px 20px 20px 20px;
+  margin: 50px 50px 50px;
+  position: relative;
 }
 .namefield {
   height: 20px;
@@ -132,15 +159,17 @@ h1 {
 .contactform form {
   width: 100%;
   max-width: 500px;
-  padding: 25px;
-  display: flex;
+  display: grid;
+  align-items: left;
+  margin: -20px -30px 40px 40px;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 .contactform .form-group {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;  */
   width: 100%; 
   margin-bottom: 15px; 
 }
