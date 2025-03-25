@@ -55,9 +55,12 @@ export default {
             <input type="email" name="email" id="email" class="emailfield" required>
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="8" class="messagefield" required></textarea>
-            <div><button type="submit">Submit</button></div>
-          <div v-if="showConfirmation" class="confirmation-message">
-          <p>Message recieved.</p>
+
+            <div class="form-actions">
+              <div><button type="submit">Submit</button></div>
+              <div v-if="showConfirmation" class="confirmation-message">
+                <p class="confirmation-text">Message received.</p>
+            </div>
           </div>
         </form>
       </div>
@@ -85,12 +88,12 @@ html, body {
   background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
   background-size: cover; /* Ensures the image fills the entire screen */
 }
-p {
+/* p {
   font-family: "millennium_2";
   color: #1b1b1b;
   font-size: 14px !important;
   text-align: left;
-}
+} */
 .contentpage {
   width: 100vw;             /* Takes full width of the parent container */
   height: 70vh;           /* Full viewport height */
@@ -202,15 +205,24 @@ p {
 .contactform button:hover {
   background-color: #c1c1c1;
 }
+.contactform .form-actions {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
 .contactform .confirmation-message {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 6px;
+  padding: 2px 2px 2px 20px;
+  height: 20px;
+  width: 120px;
   background-color: #61af67;
   color: #ffffff;
-  border-radius: 4px;
-  text-align: center;
 }
-
+.confirmation-text {
+  color: white;
+  font-size: 9px;
+  margin-bottom: 6px;
+}
 
 
     /* .form-container {
