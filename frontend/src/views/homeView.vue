@@ -87,11 +87,11 @@ h1 {
   margin: 50px 50px 50px;
 }
 .contentpage {
-  width: 100vw;             /* Takes full width of the parent container */
-  height: 70vh;           /* Full viewport height */
-  display: flex;           /* Enable flexbox */
-  justify-content: center; /* Center .hubbox horizontally */
-  align-items: center;     /* Center .hubbox vertically */
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ ଘ(੭*ˊᵕˋ)੭*                            ੈ✩‧₊˚⋆͛*͛ ͙͛ ⁑͛⋆͛*͛ ͙͛ */
 .navbox {

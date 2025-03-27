@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;  /* Ensures full height */
+  margin: 0;
+  padding: 0;
+  background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image fills the entire screen */
+}
+.contentpage {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hubbox {
+width: 700px;          
+height: 500px;          
+background-color: rgba(0, 0, 0, 0.5);
+border-style: ridge;
+border-width: 7px;
+border-color: rgb(231, 231, 231);
+border-radius: 4px;
+box-sizing: border-box;
+
+padding: 5px;
+margin: 0;
+}

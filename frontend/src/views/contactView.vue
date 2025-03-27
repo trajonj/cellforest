@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as emailjs from 'emailjs-com';
 import navigationbuttons from '@/components/navbuttons.vue';
+import '@/assets/global.css';
 
 export default {
   name: 'ContactUs',
@@ -81,42 +82,6 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
-html, body {
-  height: 100%;  /* Ensures full height */
-  margin: 0;
-  padding: 0;
-  background: url("@/assets/images/tony-stoddard-DgZxBnZeQo8-unsplash.jpg") no-repeat center center fixed;
-  background-size: cover; /* Ensures the image fills the entire screen */
-}
-/* p {
-  font-family: "millennium_2";
-  color: #1b1b1b;
-  font-size: 14px !important;
-  text-align: left;
-} */
-.contentpage {
-  width: 100vw;             /* Takes full width of the parent container */
-  height: 70vh;           /* Full viewport height */
-  display: flex;           /* Enable flexbox */
-  justify-content: center; /* Center .hubbox horizontally */
-  align-items: center;     /* Center .hubbox vertically */
-}
-.hubbox {
-  width: 700px;          
-  height: 500px;          
-  background-color: rgba(0, 0, 0, 0.5);
-  border-style: ridge;
-  border-width: 7px;
-  border-color: rgb(231, 231, 231);
-  border-radius: 4px;
-  /*outline: 4px solid black;*/
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-
-  padding: 5px 5px 5px;
-  margin: 50px 50px 50px;
-}
 .talk {
   text-align: center;
   margin-bottom: 30px;
@@ -139,17 +104,15 @@ html, body {
   width: 500px;          
   height: 400px;          
   background-color: #e3e3e3;
-  border-style: ridge;
-  border-width: 7px;
-  border-color: rgb(231, 231, 231);
+  border-style: 7px ridge rgb(231, 231, 231);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 10px 20px 20px 20px;
-  margin: 50px 50px 50px;
   position: relative;
+  margin: auto;
 }
 .namefield {
   height: 20px;
@@ -166,18 +129,11 @@ html, body {
   display: grid;
   align-items: left;
   margin: -20px -30px 40px 40px;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 .contactform .form-group {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;  */
   width: 100%; 
   margin-bottom: 15px; 
 }
-
 .contactform .form-group label {
   align-self: flex-start; 
   margin-bottom: 5px; 
@@ -186,7 +142,6 @@ html, body {
   font-size: 12px;
   color:#000000
 }
-
 .contactform input,
 .contactform textarea {
   width: 80%;
@@ -227,62 +182,4 @@ html, body {
   font-size: 9px;
   margin-bottom: 6px;
 }
-
-
-    /* .form-container {
-        width: 640px;
-        height: 1435px;
-        margin-top: 10px;
-      } */
-    
-    /* label {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
-    } */
-
-    /* form {
-        width: 500px;
-        padding-bottom: 50px;
-        padding-top: 25px;
-      } */
-
-    /* input[type="text"],
-    input[type="email"],
-    textarea {
-      font-family: Arial, Helvetica, sans-serif;
-      width: 100%;
-      padding: 10px;
-      border: 2px solid #474747;
-      background-color: #212121;
-      color: #FFFFFF;
-      border-radius: 2%;
-      color: #FFFFFF;
-    } */
-    
-    /* .confirmation-message {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #61af67;
-    color: #ffffff;
-    border-radius: 4px;
-    text-align: center;
-    width: 500px;
-    height: 30;
-    } */
-
-    /* button[type="submit"] {
-    background-color: #e4e4e4;
-    color: #000000;
-    border: none;
-    padding: 2px 4px;
-    cursor: pointer;
-    font-family: SimSun-ExtB;
-    font-size: 14px;
-    margin-top: 10px;
-    } */
-
-    /* button[type="submit"]:hover {
-      background-color: #c1c1c1;
-    } */
-
 </style>
