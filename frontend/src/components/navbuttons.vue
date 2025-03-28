@@ -31,5 +31,6 @@ export default {
 button {
     border: 0;
     margin: 2px;
+    margin-left: 20px;
 }
 </style>

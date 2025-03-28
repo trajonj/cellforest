@@ -1,16 +1,25 @@
 <template>
-  <v-app>
-  <div class="backhome">
+  <div>
+    <ThreeBackground />
+    <div class="backhome">
     <router-link to="/">
       <img class="rotate-3d" src="./assets/images/rhurbo_logo_c.png" alt="Back to Home" width="50" height="50" />
     </router-link>
+    </div>
+    <router-view />
   </div>
-  <router-view />
-  </v-app>
 </template>
   
 
 <script>
+import ThreeBackground from './components/ThreeBackground.vue';
+
+export default {
+  name: 'App',
+  components: {
+    ThreeBackground
+  }
+};
 
 </script>
 

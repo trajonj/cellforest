@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import BlogPosts from '@/components/BlogPosts.vue';
 import marquee from '@/components/vuemarquee.vue';
+import '@/assets/global.css';
 
 
 export default {
@@ -23,10 +24,14 @@ export default {
       <router-link to="/contact"><button class="cntctbttn">contact</button></router-link>
       <router-link to="/resources"><button class="rscrsbttn">resources</button></router-link>
     </div>
-    <!-- <div class="scrtlogo"><img src="@/assets/images/rhurbo_logo.png"></div> -->
-    <!-- <div class="scrtlogo2"><img src="@/assets/images/rhurbo_logo_extended.png"></div> -->
     <div class="apiblog" style="width: 370px; height: 142px;"><BlogPosts></BlogPosts></div>
-    <div class="towertwo"></div>
+    <router-link to="/portfolio" class="tower-link" data-tooltip="MY PORTFOLIO">
+      <img class="towertwo" src="@/assets/images/tower2.png" alt="tower2">
+      <img class="towertwo-hover" src="@/assets/images/tower2tan.png" alt="tower2tan">
+    </router-link>
+
+    <div class="slideshow" style="width: 250px; height: 150px;"></div>
+
     <div class="marqueebox"><marquee></marquee></div>
   </div>
 </div>
@@ -69,7 +74,7 @@ h1 {
   border: 7px solid #ccc; /* Border styling */
   border-style: ridge;
   border-radius: 40px 4px 70px 4px; /* Optional: rounded edges */
-  background-color: rgba(76, 76, 76, 0.268); /* Light background */
+  background-color: #cccccc4e;
 }
 .hubbox {
   width: 700px;          
@@ -78,13 +83,14 @@ h1 {
   border-style: ridge;
   border-width: 7px;
   border-color: rgb(231, 231, 231);
-  border-radius: 4px;
+  border-radius: 50px 4px 100px 4px;
   /*outline: 4px solid black;*/
   box-sizing: border-box;
   position: relative;
 
   padding: 5px 5px 5px;
   margin: 50px 50px 50px;
+  overflow: hidden;
 }
 .contentpage {
   width: 100vw;
@@ -105,7 +111,7 @@ h1 {
   margin: 2px;
   border: 7px ridge #ccc; /* Border styling */
   border-radius: 4px; /* Optional: rounded edges */
-  background-color: rgba(255, 255, 255, 0.1); /* Light background */
+  background-color: #cccccc69;
   width: fit-content; /* Adjusts to content width */
 }
 /* ｡*ﾟ✲*☆(๑òᆺó๑)｡*ﾟ✲*☆*̣̥☆·͙̥‧‧̩̥·‧•̥̩̥͙‧·‧̩̥˟͙冬˟͙‧̩̥·‧•̥̩̥͙‧·‧̩̥‧·͙̥̣☆*̣̥ */
@@ -173,11 +179,75 @@ h1 {
   font-family: SimSun-ExtB;
 }
 /* ⋆୨୧˚૮ ＾ﻌ＾ა˚୨୧⋆ʕっ•ᴥ•ʔっ */
-.towertwo{
+.tower-link {
   position: absolute;
+  right: -10px;
+  top: 5px;
+  width: 225px;
+  height: 225px;
+  display: block;
+}
+.tower-link .towertwo {
+  width: 100%;
+  height: 100%;
+}
+.tower-link .towertwo-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.tower-link:hover .towertwo-hover {
+  opacity: 1;
+}
+.tower-link:hover .towertwo {
+  opacity: 0;
+}
+.tower-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 30px;
+  right: 14px;
+  transform: translateY(-50%);
+  background-color: #ccc;
+  color: #1b1b1b;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.tower-link::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 97px;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #ccc transparent transparent; /* Creates the left arrow */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.tower-link:hover::after,
+.tower-link:hover::before {
+  opacity: 1; /* Show the tooltip */
+  visibility: visible; /* Make it visible */
+}
+
+.slideshow{
+  position:absolute;
+  bottom: 25px;
   right: 5px;
-  width: 100px;
-  height: 100px;
-  border: 4px solid red;
+  border: 7px ridge #ccc;
+  border-radius: 70px 4px 70px 4px;
+  background-color: #cccccc69;
 }
 </style>
